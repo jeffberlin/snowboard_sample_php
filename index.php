@@ -21,21 +21,26 @@
 		}
 
 		.container {
+			margin-top: 10vh;
 			max-width: 1200px;
-			background-color: lightgrey;
-			opacity: .4;
-			height: 100px;
+			background: rgba(251, 251, 251, 0.5);
+			height: 100vh;
+		}
+
+		.header {
+			padding-top: 2rem;
 		}
 		
 		
 	</style>
 	<body>
 
-		<div class="container">
+		<div class="header container text-center">
+
+			<img class="img-fluid text-center" src="images/logo.png">
 
 			<?php
 
-				
 
 			?>
 
