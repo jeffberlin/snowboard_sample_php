@@ -7,19 +7,39 @@
 	</head>
 	<style type="text/css">
 
+		html, body {
+			overflow-x: hidden;
+			width: 100%;
+		}
+
 		body {
+			background-image: url("images/background.jpg");
+		}
+
+		.container-fluid {
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
 			background-color: lightgrey;
+			opacity: .4;
+			height: 100px;
 		}
 		
 		
 	</style>
 	<body>
 
-		<?php
+		<div class="container">
 
-			
+			<?php
 
-		?>
+				
+
+			?>
+
+		</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
