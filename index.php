@@ -14,13 +14,17 @@
 
 		body {
 			background-image: url("images/background.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding-left: 10%;
+			padding-right: 10%;
 		}
 
 		.container-fluid {
 			padding: 0;
 		}
 
-		.container {
+		.container-fluid {
 			margin-top: 10vh;
 			max-width: 1200px;
 			background: rgba(251, 251, 251, 0.5);
@@ -35,7 +39,7 @@
 	</style>
 	<body>
 
-		<div class="header container text-center">
+		<div class="header container-fluid text-center">
 
 			<img class="img-fluid text-center" src="images/logo.png">
 
