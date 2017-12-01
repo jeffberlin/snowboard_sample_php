@@ -43,7 +43,6 @@
 			color: #ffffff;
 			text-align: left;
 			letter-spacing: .8px;
-			
 		}
 
 		.header {
@@ -66,11 +65,12 @@
 
 		.boards {
 			display: inline-block;
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 		}
 
 		.boards img {
 			height: 20rem;
+			margin-bottom: 1rem;
 		}
 
 		.snowboard-images {
@@ -86,6 +86,7 @@
 		<?php
 
 			$mensBoards = "Men's Boards";
+			$womensBoards = "Women's Boards";
 
 		?>
 
@@ -111,17 +112,9 @@
 
 					<div class="boards col-lg-3 col-md-3">
 
-						<img class="img-fluid" src="images/board-3.png">
+						<img class="img-fluid" src="images/board-7.png">
 
-						<h3>Talent (women's)</h3>
-
-					</div>
-
-					<div class="boards col-lg-3 col-md-3">
-
-						<img class="img-fluid" src="images/board-2.png">
-
-						<h3>Clash</h3>
+						<h3>Process Flying V</h3>
 
 					</div>
 
@@ -135,9 +128,9 @@
 
 					<div class="boards col-lg-3 col-md-3">
 
-						<img class="img-fluid" src="images/board-5.png">
+						<img class="img-fluid" src="images/board-2.png">
 
-						<h3>Chopper LTD Marvel</h3>
+						<h3>Clash</h3>
 
 					</div>
 
@@ -146,6 +139,28 @@
 						<img class="img-fluid" src="images/board-5.png">
 
 						<h3>Chopper LTD Marvel</h3>
+
+					</div>
+
+				</div>
+
+				<h2><?php echo $womensBoards; ?></h2>
+
+				<div class="snowboard-images">
+
+					<div class="boards col-lg-3 col-md-3">
+
+						<img class="img-fluid" src="images/board-3.png">
+
+						<h3>Talent</h3>
+
+					</div>
+
+					<div class="boards col-lg-3 col-md-3">
+
+						<img class="img-fluid" src="images/board-6.png">
+
+						<h3>Déjà Vu</h3>
 
 					</div>
 
