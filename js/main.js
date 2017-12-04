@@ -1,11 +1,13 @@
 // Handles the 'see more' button for men's boards
 function showMoreMensBoards() {
-
+    //removes 'show less' button
     document.getElementById('button-mens').style.display = "none";
-
+    //shows extra boards
     document.getElementById('more-mens').style.display = "block";
-
+    //shows the 'show less' button
     document.getElementById('button-less-mens').style.display = "inline-block";
+
+    console.log("click");
 }
 
 // Handles the 'show less' men's boards button
@@ -16,6 +18,8 @@ function showLessMensBoards() {
     document.getElementById('more-mens').style.display = "none";
     //shows 'see more' button
     document.getElementById('button-mens').style.display = "inline-block";
+
+    console.log("click");
 }
 
 // Handles the 'see more' button for women's boards
@@ -26,6 +30,8 @@ function showMoreWomensBoards() {
     document.getElementById('more-womens').style.display = "block";
     //shows the 'show less' button
     document.getElementById('button-less-womens').style.display = "inline-block";
+
+    console.log("click");
 }
 
 // Handles the 'show less' women's boards button
@@ -36,4 +42,6 @@ function showLessWomensBoards() {
     document.getElementById('more-womens').style.display = "none";
     //shows 'see more' button
     document.getElementById('button-womens').style.display = "inline-block";
+
+    console.log("click");
 }

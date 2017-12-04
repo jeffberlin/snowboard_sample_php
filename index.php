@@ -279,7 +279,7 @@
 
 							<div class="boards col-lg-3 col-md-3">
 
-								<img class="img-fluid" src="images/board-3.png">
+								<img class="img-fluid" src="images/board_3.png">
 
 								<h3>Talent</h3>
 
@@ -287,7 +287,7 @@
 
 							<div class="boards col-lg-3 col-md-3">
 
-								<img class="img-fluid" src="images/board-6.png">
+								<img class="img-fluid" src="images/board_6.png">
 
 								<h3>Déjà Vu</h3>
 
