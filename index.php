@@ -194,7 +194,7 @@
 
 					<!-- div for hidden boards in the list -->
 
-					<div id="more-mens" style="display: none;">
+					<div id="second-row-mens" style="display: none;">
 
 						<div class="row">
 
@@ -266,8 +266,28 @@
 
 					</div>
 
-					<button class="button" id="button-mens" onclick="showMoreMensBoards()">See More</button>
+					<div class="third-row-mens" style="display: none;">
+
+						<div class="row">
+							
+							<div class="boards col-lg-3 col-md-3">
+
+								<img class="img-fluid" src="images/board_9.png">
+
+								<h3><?php echo $hiddenBoards[0]; ?></h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- button shows the next 2 rows of boards -->
+					<button class="button" id="button-mens" onclick="showFirstRowMens()">See More</button>
+					<!-- button removes the last 2 rows of boards from render -->
 					<button class="button" id="button-less-mens" onclick="showLessMensBoards()" style="display: none;">See Less</button>
+					<!-- button shows the next 2 rows of boards (different from previous two) -->
+					<button class="button" id="button-next-mens" onclick="showSecondRowMens()" style="display: none;">See More</button>
 
 				</div>
 
