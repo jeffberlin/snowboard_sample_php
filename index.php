@@ -266,7 +266,7 @@
 
 					</div>
 
-					<div class="third-row-mens" style="display: none;">
+					<div id="third-row-mens" style="display: none;">
 
 						<div class="row">
 							
@@ -283,11 +283,11 @@
 					</div>
 
 					<!-- button shows the next 2 rows of boards -->
-					<button class="button" id="button-mens" onclick="showFirstRowMens()">See More</button>
+					<button class="button" id="second-mens" onclick="showFirstRowMens()">See More</button>
 					<!-- button removes the last 2 rows of boards from render -->
-					<button class="button" id="button-less-mens" onclick="showLessMensBoards()" style="display: none;">See Less</button>
+					<button class="button" id="button-less-mens" onclick="removePreviousRow()" style="display: none;">See Less</button>
 					<!-- button shows the next 2 rows of boards (different from previous two) -->
-					<button class="button" id="button-next-mens" onclick="showSecondRowMens()" style="display: none;">See More</button>
+					<button class="button" id="third-mens" onclick="showSecondRowMens()" style="display: none;">See More</button>
 
 				</div>
 
