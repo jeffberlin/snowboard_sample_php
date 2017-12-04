@@ -108,7 +108,7 @@
 			$mensBoards = "Men's Boards";
 			$womensBoards = "Women's Boards";
 
-			$hiddenBoards = ["Flight Attendant Split", "Fish", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key"];
+			$hiddenBoards = ["Flight Attendant Split", "Fish", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator"];
 
 		?>
 
@@ -232,9 +232,33 @@
 
 							<div class="boards col-lg-3 col-md-3">
 
+								<img class="img-fluid" src="images/board_15.png">
+
+								<h3><?php echo $hiddenBoards[6]; ?></h3>
+
+							</div>
+
+							<div class="boards col-lg-3 col-md-3">
+
 								<img class="img-fluid" src="images/board_3.png">
 
 								<h3><?php echo $hiddenBoards[4]; ?></h3>
+
+							</div>
+
+							<div class="boards col-lg-3 col-md-3">
+
+								<img class="img-fluid" src="images/board_14.png">
+
+								<h3><?php echo $hiddenBoards[5]; ?></h3>
+
+							</div>
+
+							<div class="boards col-lg-3 col-md-3">
+
+								<img class="img-fluid" src="images/board_16.png">
+
+								<h3><?php echo $hiddenBoards[7]; ?></h3>
 
 							</div>
 
