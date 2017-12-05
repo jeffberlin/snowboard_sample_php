@@ -18,10 +18,7 @@ function removePreviousRow() {
     firstRemove.remove();
 
     var secondRemove = document.getElementById('third-row-mens');
-
-    if (secondRemove === true) {
-        secondRemove.remove();
-    }
+    secondRemove.remove();
 
     console.log('removal click');
 }
