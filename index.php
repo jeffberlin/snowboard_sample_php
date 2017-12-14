@@ -16,6 +16,8 @@
 		body {
 			background-image: url("images/background.jpg");
 			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
 			background-repeat: no-repeat;
 			padding-left: 10%;
 			padding-right: 10%;
@@ -108,7 +110,11 @@
 			$mensBoards = "Men's Boards";
 			$womensBoards = "Women's Boards";
 
-			$hiddenBoards = ["Flight Attendant Split", "Fish", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator"];
+			// $hiddenBoards = ["Flight Attendant Split", "Fish", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator"];
+
+			$boardNames = [ "Flight Attendant Split", "Flight Attendant", "Fish", "Custom Flying V", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator", "Custom X Flying V", "Process Flying V", "Process", "Process Off-Axis", "Deep Thinker", "Free Thinker" ];
+
+			sort($boardNames);
 
 		?>
 
@@ -192,7 +198,7 @@
 
 					</div>
 
-					<!-- div for hidden boards in the list -->
+		<!-- div for next 2 rows of hidden boards in the list -->
 
 					<div id="second-row-mens" style="display: none;">
 
@@ -266,6 +272,8 @@
 
 					</div>
 
+		<!-- div for next 2 rows of hidden boards in the list -->
+
 					<div id="third-row-mens" style="display: none;">
 
 						<div class="row">
@@ -284,50 +292,50 @@
 
 					<!-- button shows the next 2 rows of boards -->
 					<button class="button" id="second-mens" onclick="showFirstRowMens()">See More</button>
+
 					<!-- button removes the last 2 rows of boards from render -->
 					<button class="button" id="button-less-mens" onclick="removePreviousRow()" style="display: none;">See Less</button>
+
 					<!-- button shows the next 2 rows of boards (different from previous two) -->
 					<button class="button" id="third-mens" onclick="showSecondRowMens()" style="display: none;">See More</button>
 
 				</div>
 
-					<h2><?php echo $womensBoards; ?></h2>
+				<h2><?php echo $womensBoards; ?></h2>
 
-					<div class="snowboard-images">
+				<div class="snowboard-images">
 
-						<div class="row">
+					<div class="row">
 
-							<div class="boards col-lg-3 col-md-3">
+						<div class="boards col-lg-3 col-md-3">
 
-								<img class="img-fluid" src="images/board_3.png">
+							<img class="img-fluid" src="images/board_3.png">
 
-								<h3>Talent</h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_6.png">
-
-								<h3>Déjà Vu</h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3" id="more-womens" style="display: none;">
-
-								<img class="img-fluid" src="images/board_8.png">
-
-								<h3>Free Thinker</h3>
-
-							</div>
+							<h3>Talent</h3>
 
 						</div>
 
-						<button class="button" id="button-womens" onclick="showMoreWomensBoards()">See More</button>
+						<div class="boards col-lg-3 col-md-3">
 
-						<button class="button" id="button-less-womens" onclick="showLessWomensBoards()" style="display: none;">See Less</button>
+							<img class="img-fluid" src="images/board_6.png">
+
+							<h3>Déjà Vu</h3>
+
+						</div>
+
+						<div class="boards col-lg-3 col-md-3" id="more-womens" style="display: none;">
+
+							<img class="img-fluid" src="images/board_8.png">
+
+							<h3>Free Thinker</h3>
+
+						</div>
 
 					</div>
+
+					<button class="button" id="button-womens" onclick="showMoreWomensBoards()">See More</button>
+
+					<button class="button" id="button-less-womens" onclick="showLessWomensBoards()" style="display: none;">See Less</button>
 
 				</div>
 

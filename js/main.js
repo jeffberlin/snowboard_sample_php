@@ -1,5 +1,9 @@
 // Handles the 'see more' button for men's boards
 function showFirstRowMens() {
+
+    // var secondRow = document.getElementById('second-row-mens');
+    // return secondRow
+
     //removes 'show less' button
     document.getElementById('second-mens').style.display = "none";
     //shows extra boards
@@ -18,7 +22,17 @@ function removePreviousRow() {
     firstRemove.remove();
 
     var secondRemove = document.getElementById('third-row-mens');
-    secondRemove.remove();
+    // secondRemove.remove();
+
+    if(secondRemove == 1) {
+        secondRemove.style.display = "none";
+    }
+
+    document.getElementById('button-less-mens').style.display = "none";
+
+    document.getElementById('second-mens').style.display = "inline-block";
+
+    document.getElementById('third-mens').style.display = "none";
 
     console.log('removal click');
 }
@@ -26,6 +40,8 @@ function removePreviousRow() {
 function showSecondRowMens() {
 
     document.getElementById('third-row-mens').style.display = "block";
+
+    document.getElementById('third-mens').style.display = "none";
 }
 
 // Handles the 'see more' button for women's boards
