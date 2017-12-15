@@ -128,7 +128,7 @@
 
 						<?php 
 
-							$boardImages = array(
+							$mensBoardImages = array(
 								"images/flight_attendant_split.png",
 								"images/flight_attendant.png",
 								"images/fish.png",
@@ -144,19 +144,22 @@
 								"images/process.png",
 								"images/process_off-axis.png",
 								"images/deep_thinker.png",
-								"images/free_thinker.png"
+								"images/free_thinker.png",
+								"images/ripcord.png",
+								"images/descendant.png",
+								
 							);
 
-							sort($boardImages, SORT_NATURAL | SORT_FLAG_CASE);
+							sort($mensBoardImages, SORT_NATURAL | SORT_FLAG_CASE);
 
-							$boardNames = array("Flight Attendant Split", "Flight Attendant", "Fish", "Custom Flying V", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator", "Custom X Flying V", "Process Flying V", "Process", "Process Off-Axis", "Deep Thinker", "Free Thinker");
+							$mensBoardNames = array("Flight Attendant Split", "Flight Attendant", "Fish", "Custom Flying V", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator", "Custom X Flying V", "Process Flying V", "Process", "Process Off-Axis", "Deep Thinker", "Free Thinker", "Ripcord", "Descendant");
 
-							sort($boardNames, SORT_NATURAL | SORT_FLAG_CASE);
+							sort($mensBoardNames, SORT_NATURAL | SORT_FLAG_CASE);
 
-							foreach ($boardImages as $index => $images) {
+							foreach ($mensBoardImages as $index => $images) {
 								echo '<div class="boards col-lg-3 col-md-3" id="first-set">';
 								echo '<img class="img-fluid" src="' . $images . '">';
-								echo '<h3>' . $boardNames[$index] . '</h3>';
+								echo '<h3>' . $mensBoardNames[$index] . '</h3>';
 								echo '</div>';
 							}
 
