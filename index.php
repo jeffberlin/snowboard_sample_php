@@ -110,12 +110,6 @@
 			$mensBoards = "Men's Boards";
 			$womensBoards = "Women's Boards";
 
-			// $hiddenBoards = ["Flight Attendant Split", "Fish", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator"];
-
-			$boardNames = [ "Flight Attendant Split", "Flight Attendant", "Fish", "Custom Flying V", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator", "Custom X Flying V", "Process Flying V", "Process", "Process Off-Axis", "Deep Thinker", "Free Thinker" ];
-
-			sort($boardNames);
-
 		?>
 
 		<div class="container-fluid">
@@ -132,163 +126,45 @@
 
 					<div class="row">
 
-						<div class="boards col-lg-3 col-md-3">
+						<?php 
 
-							<img class="img-fluid" src="images/board_1.png">
+							$boardImages = array(
+								"images/flight_attendant_split.png",
+								"images/flight_attendant.png",
+								"images/fish.png",
+								"images/custom_flying_v.png",
+								"images/trick_pony.png",
+								"images/family_tree_mystery_malolo.png",
+								"images/family_tree_skeleton_key.png",
+								"images/name_dropper.png",
+								"images/family_tree_dump_truck_split.png",
+								"images/instigator.png",
+								"images/custom_x_flying_v.png",
+								"images/process_flying_v.png",
+								"images/process.png",
+								"images/process_off-axis.png",
+								"images/deep_thinker.png",
+								"images/free_thinker.png"
+							);
 
-							<h3>Flight Attendant</h3>
+							sort($boardImages, SORT_NATURAL | SORT_FLAG_CASE);
 
-						</div>
+							$boardNames = array("Flight Attendant Split", "Flight Attendant", "Fish", "Custom Flying V", "Trick Pony", "Family Tree Mystery Malolo", "Family Tree Skeleton Key", "Name Dropper", "Family Tree Dump Truck Split", "Instigator", "Custom X Flying V", "Process Flying V", "Process", "Process Off-Axis", "Deep Thinker", "Free Thinker");
 
-						<div class="boards col-lg-3 col-md-3">
+							sort($boardNames, SORT_NATURAL | SORT_FLAG_CASE);
 
-							<img class="img-fluid" src="images/board_2.png">
+							foreach ($boardImages as $index => $images) {
+								echo '<div class="boards col-lg-3 col-md-3" id="first-set">';
+								echo '<img class="img-fluid" src="' . $images . '">';
+								echo '<h3>' . $boardNames[$index] . '</h3>';
+								echo '</div>';
+							}
 
-							<h3>Custom Flying V</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_13.png">
-
-							<h3>Custom X Flying V</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_4.png">
-
-							<h3>Process Flying V</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_5.png">
-
-							<h3>Process</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_6.png">
-
-							<h3>Process Off-Axis</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_7.png">
-
-							<h3>Deep Thinker</h3>
-
-						</div>
-
-						<div class="boards col-lg-3 col-md-3">
-
-							<img class="img-fluid" src="images/board_8.png">
-
-							<h3>Free Thinker</h3>
-
-						</div>
+						?>
 
 					</div>
 
-		<!-- div for next 2 rows of hidden boards in the list -->
-
-					<div id="second-row-mens" style="display: none;">
-
-						<div class="row">
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_9.png">
-
-								<h3><?php echo $hiddenBoards[0]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_10.png">
-
-								<h3><?php echo $hiddenBoards[1]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_11.png">
-
-								<h3><?php echo $hiddenBoards[2]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_12.png">
-
-								<h3><?php echo $hiddenBoards[3]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_15.png">
-
-								<h3><?php echo $hiddenBoards[6]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_3.png">
-
-								<h3><?php echo $hiddenBoards[4]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_14.png">
-
-								<h3><?php echo $hiddenBoards[5]; ?></h3>
-
-							</div>
-
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_16.png">
-
-								<h3><?php echo $hiddenBoards[7]; ?></h3>
-
-							</div>
-
-						</div>
-
-					</div>
-
-		<!-- div for next 2 rows of hidden boards in the list -->
-
-					<div id="third-row-mens" style="display: none;">
-
-						<div class="row">
-							
-							<div class="boards col-lg-3 col-md-3">
-
-								<img class="img-fluid" src="images/board_9.png">
-
-								<h3><?php echo $hiddenBoards[0]; ?></h3>
-
-							</div>
-
-						</div>
-
-					</div>
+				
 
 					<!-- button shows the next 2 rows of boards -->
 					<button class="button" id="second-mens" onclick="showFirstRowMens()">See More</button>
